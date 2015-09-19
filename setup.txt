@@ -1,0 +1,154 @@
+These are the RPC framework setup instructions for Ubuntu 12.04. Not checked
+for other versions.
+
+(I) Installing Required Components:
+----------------------------------
+1. Download Eclipse Juno (http://www.eclipse.org/downloads/index-developer.php)
+2. Add Oracle Java 7 repository for ubuntu:
+    $ sudo add-apt-repository ppa:webupd8team/java
+    $ sudo apt-get update
+    $ sudo apt-get install oracle-java7-installer
+    $ export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
+3. Setup Android SDK for Eclipse following instructions provided here: 
+    * download ADT http://dl.google.com/android/adt/adt-bundle-linux-x86_64.zip
+    * http://developer.android.com/sdk/installing/installing-adt.html
+    $ sudo apt-get install ia32-libs git
+4. Setup Android NDK by following the instructions given here
+    * http://developer.android.com/tools/sdk/ndk/index.html
+5. Install Maven tool (http://maven.apache.org/) by giving the following command:
+    $ sudo apt-get --no-install-recommends install maven
+6. Install Opencv 2.4
+    $ sudo apt-add-repository ppa:bobby-prani/opencv-2.4.2
+    $ sudo apt-get update
+    $ sudo apt-get install libopencv-dev
+7. Install OpenCV4Android
+   $ wget http://superb-dca3.dl.sourceforge.net/project/opencvlibrary/opencv-android/2.4.3/OpenCV-2.4.3.1-android-sdk.zip
+8. Install OpenCV natively
+   $ sudo apt-get build-dep opencv
+   $ git clone git://code.opencv.org/opencv.git opencv.git
+   $ cmake -DBUILD_opencv_java=ON CMakeLists.txt
+   $ make -j4
+   $ export LD_LIBRARY_PATH=/home/hyesoon/opencv.git/lib/
+
+After the above steps test your installation by creating a new Android project
+and running it. If everything works, proceed to the next part
+
+(II) RPC framework:
+------------------
+
+We use Apache Maven (http://maven.apache.org) to automatically install the
+required dependencies in our project. You can read more about this tool on the
+project page. The basic concept is that you define the dependencies of your
+project in a file called pom.xml(Project Object Model). When you run the command
+
+$ mvn compile
+
+maven will download all the dependencies required. Maven will also copy all the
+dependencies to the target location if specified.
+
+We are using a tool called Apache Avro (http://avro.apache.org) for our RPC
+mechanism. We have an entry in pom.xml which pulls in all the dependencies
+required to run Avro.
+
+(III) Example applications:
+--------------------------
+
+We have a sample application which was developed using the Apache Avro
+framework. In this application we implemented a basic offloading framework for
+matrix multiplication. Depending on the matrix dimension and the network
+bandwidth we decide whether to offload the compuation or do it locally on the
+client.
+
+You should download these applications from here: 
+
+* iperf3:
+ $ svn co https://svn.research.cc.gatech.edu/cloudprof/code/iperf3
+
+* Server and Client:
+ $ svn co https://svn.research.cc.gatech.edu/cloudprof/code/final_code/
+
+* set library path to opencv libraries
+  $ export LD_LIBRARY_PATH=$PWD/final_code/android-video-editor-server/libs/native/x86
+
+  replace PWD to current directory
+
+* start eclipse from command line
+
+iperf3:
+------
+ This is the standard tool we use to measure the quality of a network
+ connection. To compile this go the folder and type the following commands:
+
+$ ./configure
+$ make
+
+go to the source folder. There should an "iperf3" executable. Run this in a
+terminal using:
+
+$ iperf -s
+
+This will start up the server side of the bandwidth measurement tool
+
+Client:
+-----------
+In this folder, to get the dependencies, use the following command:
+
+$ mvn compile
+
+This will download all the dependencies and copy them to the required location.
+It will also compile the Avro IDL file to generate the required RPC interface
+for communication between the client and the server.
+Open this project in eclipse by using (Project->Android project from existing
+code)
+
+
+Server:
+----------
+Open it in eclipse using Properties->import existing java code
+(Project->Project from existing code). Make sure that the generated RPC
+interface code in the directory is included in the Java Build Path.
+For this click on Properties->Java Build Path and choose the source tab. Add the
+directory target/generated-sources/avro. If an avro folder is already
+linked, delete the previous entry and add the new one.
+
+Now build and run the server code. From eclipse Right click on Server->Run As
+Java application -> Server. The server should say 
+"Server is ready to accept connections"
+
+After launching the server, try starting the
+android application. Please ensure that you change the IP address of the server
+in the client code(TODO: add a field in the app for the server ip).
+
+Client:
+------
+
+Setup NDK_ROOT environment variable to point to the NDK_ROOT
+Compile the native library by going to the jni folder of the Client and typing:
+
+$ make
+
+This will compile the jni library. 
+You need to set the ip address of the server in CloudClient.java of the client
+application. Now you can launch the Android application
+and test!
+
+Errors and possible workarounds:
+-------------------------------
+
+Exception in thread "main" java.lang.UnsatisfiedLinkError: no opencv_java in
+java.library.path
+
+then your eclipse is not taking your ${LD_LIBRARY_PATH} environment variable,
+you may create a file
+
+/etc/ld.so.conf.d/opencv.conf
+
+paste the following line and fix it according to your file system:
+
+/${home filesystem}/${username}/opencv/build/lib/
+
+and run:
+
+ldconfig /etc/ld.so.conf
+and restart eclipse.
+

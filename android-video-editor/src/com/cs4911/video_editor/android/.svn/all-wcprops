@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/cloudprof/!svn/ver/123/code/final_code/android-video-editor/src/com/cs4911/video_editor/android
+END
+ImageProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/cloudprof/!svn/ver/58/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/ImageProcessor.java
+END
+CloudClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/cloudprof/!svn/ver/82/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/CloudClient.java
+END
+MyTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/cloudprof/!svn/ver/55/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/MyTimer.java
+END
+PipelineEditingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/cloudprof/!svn/ver/79/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/PipelineEditingActivity.java
+END
+BandwidthMeasurement.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/cloudprof/!svn/ver/55/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/BandwidthMeasurement.java
+END
+OpenCVInitActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/OpenCVInitActivity.java
+END
+VideoViewingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/cloudprof/!svn/ver/123/code/final_code/android-video-editor/src/com/cs4911/video_editor/android/VideoViewingActivity.java
+END

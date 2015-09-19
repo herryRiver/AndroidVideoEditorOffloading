@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="libs">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/hyesoon/final_code/android-video-editor-server/libs/native/x86"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/avro-1.7.0.jar"/>
+	<classpathentry kind="lib" path="libs/avro-ipc-1.7.0.jar"/>
+	<classpathentry kind="lib" path="libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-math-2.0.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-core-asl-1.8.8.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-mapper-asl-1.8.8.jar"/>
+	<classpathentry kind="lib" path="libs/jetty-6.1.26.jar"/>
+	<classpathentry kind="lib" path="libs/jetty-util-6.1.26.jar"/>
+	<classpathentry kind="lib" path="libs/netty-3.4.0.Final.jar"/>
+	<classpathentry kind="lib" path="libs/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="libs/servlet-api-2.5-20081211.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-simple-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/snappy-java-1.0.4.1.jar"/>
+	<classpathentry kind="lib" path="libs/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="libs/opencv-2.4.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/hyesoon/final_code/android-video-editor-server/libs/native/x86"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,22 @@
+@namespace("com.cs4911.video_editor.testproto")
+protocol TestProtocol {
+	void addBlurEffect();
+	void addColorSaturationEffect();
+	void addDrawingEffect();
+	void addEdgeDetectionEffect();
+	void addGradientMagnitudeEffect();
+	void addGrayscaleEffect();
+	void addHorizontalFlipEffect();
+	void addHoughCircleEffect();
+	void addHoughLineEffect();
+	void addIdentityEffect();
+	void addMotionHistoryEffect();
+	void addNegativeEffect();
+	void addSeamCarveEffect();
+	void addSepiaEffect();
+	void addVerticalEffect();
+	void addXrayEffect();
+	void clearEffects();
+
+	array<bytes> addFrames(array<bytes> frames);
+}

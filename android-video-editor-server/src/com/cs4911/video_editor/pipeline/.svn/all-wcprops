@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/cloudprof/!svn/ver/81/code/final_code/android-video-editor-server/src/com/cs4911/video_editor/pipeline
+END
+EffectTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/cloudprof/!svn/ver/80/code/final_code/android-video-editor-server/src/com/cs4911/video_editor/pipeline/EffectTask.java
+END
+Pipeline.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/cloudprof/!svn/ver/80/code/final_code/android-video-editor-server/src/com/cs4911/video_editor/pipeline/Pipeline.java
+END
+FrameProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/cloudprof/!svn/ver/81/code/final_code/android-video-editor-server/src/com/cs4911/video_editor/pipeline/FrameProcessor.java
+END
+LocalEffectTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/cloudprof/!svn/ver/80/code/final_code/android-video-editor-server/src/com/cs4911/video_editor/pipeline/LocalEffectTask.java
+END

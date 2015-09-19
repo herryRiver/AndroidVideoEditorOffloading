@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs4911.video_editor.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="9"
+        	  android:targetSdkVersion="10"/>
+    
+    <supports-screens android:resizeable="true"
+                      android:smallScreens="true" 
+                      android:normalScreens="true" 
+                      android:largeScreens="true" 
+                      android:anyDensity="true" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <activity
+            android:name="OpenCVInitActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation" 
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.cs4911.video_editor.android.VideoViewingActivity"
+            android:label="@string/title_activity_video_viewing" 
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+        
+        <activity 
+            android:name=".PipelineEditingActivity" 
+            android:label="@string/title_activity_pipeline_editting"
+            android:screenOrientation="landscape" 
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+        
+    </application>
+    
+</manifest>

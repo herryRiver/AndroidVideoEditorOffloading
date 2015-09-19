@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/cloudprof/!svn/ver/123/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects
+END
+MotionHistoryEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/MotionHistoryEffect.java
+END
+ColorSaturationEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/ColorSaturationEffect.java
+END
+IdentityEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/IdentityEffect.java
+END
+GradientMagnitudeEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/GradientMagnitudeEffect.java
+END
+DrawingEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/DrawingEffect.java
+END
+HoughCircleEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/HoughCircleEffect.java
+END
+SepiaEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/SepiaEffect.java
+END
+NegativeEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/NegativeEffect.java
+END
+EdgeDetectionEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/EdgeDetectionEffect.java
+END
+HorizontalFlipEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/HorizontalFlipEffect.java
+END
+BlurEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/cloudprof/!svn/ver/81/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/BlurEffect.java
+END
+SeamCarveEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/SeamCarveEffect.java
+END
+GrayscaleEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/GrayscaleEffect.java
+END
+Frame.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/cloudprof/!svn/ver/58/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/Frame.java
+END
+Effect.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/cloudprof/!svn/ver/123/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/Effect.java
+END
+HoughLineEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/HoughLineEffect.java
+END
+XrayEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/XrayEffect.java
+END
+VerticalFlipEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/cloudprof/!svn/ver/54/code/final_code/android-video-editor/src/com/cs4911/video_editor/effects/VerticalFlipEffect.java
+END
